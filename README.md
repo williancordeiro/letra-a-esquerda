@@ -1,5 +1,5 @@
 # letra-a-esquerda
-Biblioteca Gratuita Online
+Biblioteca Gratuita Online em desenvolvimento
 
 # Checkist
 
