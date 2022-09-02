@@ -5,11 +5,12 @@ body {
 .le-feed {
     position: relative;
     float: left;
-    width: 70%;
-    margin: 12px;
-    padding-bottom: 100%;
+    width: 81%;
+    margin: 3px;
+    padding-bottom: 100vw;
     border-radius: 9px;
-    border: 3px #000000;
+    border-style: solid;
+    border-width: 1px;
     background-color: #ffffff;
     box-shadow: 3px #000000;
 }
@@ -23,10 +24,12 @@ body {
 .le-profile {
     position: relative;
     float: right;
-    width: 26%;
-    margin: 12px;
-    padding-bottom: 100%;
+    width: 18%;
+    margin: 3px;
+    padding-bottom: 100vw;
     border-radius: 9px;
+    border-style: solid;
+    border-width: 1px;
     background-color: #ffffff;
 }
 
@@ -36,9 +39,12 @@ body {
     top: 3px;
 }
 
-.d.flex {
-    float: right;
-    overflow: hidden;
-    height: 50%;
-    width: 50%;
+.le-search {
+    position: absolute;
+    left: 330px;
+    border: 3px #000000;
 }
+
+/* .d-lg-inline-flex {
+    vertical-align: inherit;
+} */
