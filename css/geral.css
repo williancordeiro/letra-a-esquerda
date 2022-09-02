@@ -41,10 +41,11 @@ body {
 
 .le-search {
     position: absolute;
-    left: 330px;
-    border: 3px #000000;
+    left: 410px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
-/* .d-lg-inline-flex {
-    vertical-align: inherit;
-} */
+.search-le {
+    text-align: center;
+}
