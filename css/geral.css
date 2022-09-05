@@ -42,7 +42,7 @@ body {
 .le-search {
     position: absolute;
     left: 410px;
-    border-bottom-style: solid;
+    /* border-bottom-style: solid; */
     border-bottom-width: 1px;
 }
 
