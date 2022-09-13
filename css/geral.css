@@ -1,39 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
 .le-navbar {
+    padding-bottom: 9px;
     background-color: #AB0202;
-    text-align: center;
-    font-family: 'Gochi Hand', cursiva;
-    font-size: 27px;
-    font-style: italic;
-    /* -webkit-text-stroke: 3px #000000; */
-    /* -webkit-text-stroke-color: #000000; */
 }
 
-.le-book {
-    position: fixed;
-    left: 21px;
-    top: 3px;
-    rotate: -13deg;
+.le-icon-book {
+    float: left;
+    width: 130px;
+    height: 66px;
+    margin-top: 6px;
+    rotate: -10deg;
 }
 
-.le-nav-search {
-    position: absolute;
-    left: 900px;
-    top: 3px;
+input {
+    font-family: 'Roboto', sans-serif;
 }
 
-input#le-search {
-    padding: 0px;
-    margin-top: 3px;
-    margin-bottom: 6px;
-    border-radius: 9px;
-    background-color: #ffffff;
-    border-color: #ffffff;
+.inp-le-search {
+    float: left;
+    padding: 12px 330px 9px 12px;
+    border: solid 0.1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-top: 13px;
+    margin-left: 140px;
 }
 
-button#bt-le-search {
-    position: absolute;
+button {
     background-color: #8B0101;
-    left: 270px;
-    top: 10px;
-    border-radius: 9px;
+    padding: 12px 12px 0px 12px;
+    border: solid 0.1px;
+}
+
+.bt-le-search {   
+    margin-top: 13px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.bt-le-profile-menu {
+    background-color: #8B0101;
+    border: solid 0.1px;
+    border-radius: 50%;
+    padding: 12px 12px 1px 12px;
+    margin-left: 180px;
+}
+
+.bt-le-menu {
+    float: right;
+    padding: 6px 12px 1px 12px;
+    border-radius: 3px;
+    margin-right: 27px;
+    margin-top: 16px;
 }
