@@ -2,7 +2,7 @@
 Biblioteca Gratuita Online em desenvolvimento
 
 # Figma
-https://www.figma.com/file/zI6ZBLEEDccNMbqOGbWYFZ/letra-a-esquerda
+https://www.figma.com/file/zI6ZBLEEDccNMbqOGbWYFZ/letra-a-esquerda?node-id=0%3A1
 
 # Checkist
 
