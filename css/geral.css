@@ -52,8 +52,10 @@ button {
 }
 
 .bt-le-menu {
+    color: #ffffff;
     float: right;
     padding: 6px 12px 1px 12px;
+    border-color: #000000;
     border-radius: 3px;
     margin-right: 27px;
     margin-top: 16px;
