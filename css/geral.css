@@ -7,6 +7,8 @@ body {
 .le-navbar {
     padding-bottom: 9px;
     background-color: #AB0202;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     margin-bottom: 3px;
 }
 
