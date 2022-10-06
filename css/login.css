@@ -16,3 +16,11 @@ body {
     align-items: center;
     border-radius: 9px;
 }
+
+img {
+    float: left;
+    width: 96px;
+    height: 96px;
+    margin-top: -17em;
+    margin-left: 10em;
+}
