@@ -63,3 +63,12 @@ button {
     margin-right: 27px;
     margin-top: 16px;
 }
+
+.book-bakcground {
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18vw;
+    height: 18vw;
+}

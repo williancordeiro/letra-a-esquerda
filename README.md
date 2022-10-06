@@ -8,9 +8,9 @@ https://www.figma.com/file/zI6ZBLEEDccNMbqOGbWYFZ/letra-a-esquerda?node-id=0%3A1
 
 Caixas de Diálogo
 
-- [ ] prompt
-- [ ] alert
-- [ ] confirm
+- [x] prompt
+- [x] alert
+- [x] confirm
 
 Temporizadores
 
