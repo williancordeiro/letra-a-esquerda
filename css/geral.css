@@ -4,6 +4,9 @@ body {
     font-size: 14px;
 }
 
+/*
+Barra de navegação
+*/
 .le-navbar {
     padding-bottom: 9px;
     background-color: #AB0202;
@@ -12,6 +15,9 @@ body {
     margin-bottom: 3px;
 }
 
+/*
+Icone de Livro da barra de navegação
+*/
 .le-icon-book {
     float: left;
     width: 130px;
