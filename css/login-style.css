@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-image: url(/imgs/background.png);
+    background-size: 250vh;
+    overflow: hidden;
+}

@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <div class="imports">
-        <div class="imports-google">
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-                </style>
-        </div>
-    </div>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="my-styles">
-        <link rel="stylesheet" href="css/login.css">
+    <div class="my-style">
+        <link rel="stylesheet" href="/css/login-style.css">
     </div>
-    <title>Login-LE</title>
+    <title>Login Letra à Esquerda</title>
 </head>
 <body>
-    <div class="login-area">
-        <div class="logo-le">
-            <img class="le-book" src="/imgs/logo-le.svg" alt="Logo Letra à Esquerda">
-            <form action="">
-                <input type="email" name="login-email" id="emailLE" placeholder="Email"> <br>
-                <input type="password" name="login-password" id="passwordLE" placeholder="Senha"> <br>
-                <button type="submit" id="loginLE">Entrar</button>
+    <section class="main">
+        <div class="login-area">
+            <div id="le-mini-book">
+                <img src="" alt="">
+            </div>
+            <form method="post">
+                <input type="email" id="emailLE" placeholder="Email" autofocus>
+                <input type="password" id="passwordLE" placeholder="Senha">
+                <input type="submit" id="btLoginLE" value="Entrar">
             </form>
-            <p>Ou</p>
-            <button type="button" class="register" id="registerLE">Cadastre-se</button>
+            <p>Ainda não possui uma conta?<a href="#">Registre-se</a></p>
         </div>
-    </div>
-
-    <div class="my-scripts">
-        <script src="/js/login-config.js"></script>
-    </div>
+    </section>
 </body>
 </html>
