@@ -6,6 +6,9 @@
     recommendatio();
     startTime();
     stopTimer();
+    
+    
+
     //Função de Recomendação de Leitura
     function recommendatio() {
         let qtd = 0;
@@ -47,5 +50,19 @@
         if (startTime() == 00)
             clearInterval(startTime);
     }
+
+    let inpSearchItem = function () {
+        let inpSearch = document.getElementsByName("inpSearch");
+
+        return inpSearch.values;
+    }
+
+    let btSearchItem = function(s) {
+        let btSearch = document.getElementById("btSearch");
+
+        btSearch.onclick = console.log(s.values);
+    }
+    
+    btSearchItem(inpSearchItem);
     
 })();

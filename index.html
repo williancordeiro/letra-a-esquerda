@@ -26,10 +26,10 @@
     <header class="le-navbar">
       <nav class="le-navbar">
         <a href="index.html">
-          <img class="le-icon-book" src="imgs/mini-logo-le.png" alt="">
+          <img class="le-icon-book" src="imgs/mini-logo-le.png" id="miniLogo" alt="">
         </a>
-        <input class="inp-le-search" type="search" placeholder="Procurar">
-        <button class="bt-le-search" type="submit">
+        <input class="inp-le-search" name="inpSearch" type="search" placeholder="Procurar">
+        <button class="bt-le-search" id="btSearch" type="submit" onclick="btSearch">
           <span class="material-symbols-outlined">
             search
             </span>
@@ -63,7 +63,7 @@
           <a class="nav-link" href="#">Atualizados</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ultimos Adcionados</a>
+          <a class="nav-link" id="search" href="#">Busca</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
