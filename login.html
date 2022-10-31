@@ -15,13 +15,17 @@
             <div id="le-book">
                 <img src="/imgs/logo-le.svg" alt="">
             </div>
-            <form method="post">
-                <input type="email" id="emailLE" placeholder="Email" autofocus>
+            <form id="formLE">
+                <input type="text" id="emailLE" placeholder="Email" autofocus>
                 <input type="password" id="passwordLE" placeholder="Senha">
-                <input type="submit" id="btLoginLE" value="Entrar">
+                <input type="submit" id="btLoginLE" onclick="login(); return false" value="Entrar">
             </form>
-            <p>Ainda não possui uma conta?<a href="#">Registre-se</a></p>
+            <p>Ainda não possui uma conta?<a href="">Registre-se</a></p>
         </div>
     </section>
+
+    <div class="my-script">
+        <script src="/js/login-config.js"></script>
+    </div>
 </body>
 </html>
