@@ -15,4 +15,20 @@ let emailIsValid = (email) => {
     return re.test(email);
 }
 
-let register = document.getElementById('register').disable=true;
+// Script para pagina de registro >
+
+const name = document.forms['inpName'].value;
+const lastName = document.forms['inpLastName'].value;
+const emailR = document.forms['inpEmail'].value;
+const passwordR = document.forms['inpPassword'].value;
+
+function user() {
+    
+    if (emailIsValid(emailR)) {
+        
+    }
+}
+
+function addUser(user) {
+    
+}
