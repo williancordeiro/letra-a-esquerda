@@ -5,9 +5,10 @@ function login() {
     if (emailIsValid(email) && password == 'admin') {
         alert('Sucesso');
         location.href = 'index.html';
-    } else {
-        alert('Erro! Email ou senha incorretos')
-    }
+    } else if(email == '' || password == '') {
+        alert('Insira os dados!');
+    } else 
+        alert('Email ou Senha incorretos!');
 }
 
 let emailIsValid = (email) => {
