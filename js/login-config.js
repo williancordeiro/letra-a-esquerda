@@ -4,9 +4,11 @@ function login() {
 
     if (emailIsValid(email) && passwordIsValid(password)) {
         alert('Sucesso');
+        location.href = 'index.html'
     } else if (email == '' || password == '') {
-        alert('erro');
-    }
+        alert('Insira os dados!');
+    } else 
+        alert('Email ou Senha Incorretos!')
 }
 
 // --------- Script para pagina de registro  --------- >
@@ -31,10 +33,37 @@ let confirmPassword = (passwordConfirm)=> {
 
 // ***************
 
+// ------ < Dados para pagina de Registro > ------
+
+let nameR = document.querySelector('#inpName');
+let lastNameR = document.querySelector('#inpLastName');
+let emailR = document.getElementById('inpEmail');
+
+// ------ < > ------
+
+// --------- <= Validação de campo HTML5 API => ---------
+nameR.addEventListener('invalid', () => {
+    if (nameR.value == '')
+        nameR.setCustomValidity('Preencha com o seu Nome!');
+    else
+        nameR.setCustomValidity('');
+});
+
+lastNameR.addEventListener('invalid', () => {
+    if (lastNameR.value == '')
+        lastNameR.setCustomValidity('Preencha com o seu Sobrenome!');
+    else
+        lastNameR.setCustomValidity('');
+});
+
+emailR.addEventListener('invalid', () => {
+    emailR.setCustomValidity('Preencha com email valido!');
+});
+
+// --------- <= => ---------
+
 function register() {
-    if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
-        alert('Sucesso');
-    }
+    
 }
 
 // ---------------------
