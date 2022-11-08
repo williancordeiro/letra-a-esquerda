@@ -42,28 +42,50 @@ let emailR = document.getElementById('inpEmail');
 // ------ < > ------
 
 // --------- <= Validação de campo HTML5 API => ---------
-nameR.addEventListener('invalid', () => {
-    if (nameR.value == '')
-        nameR.setCustomValidity('Preencha com o seu Nome!');
-    else
-        nameR.setCustomValidity('');
-});
+(function validate() {
+    nameR.addEventListener('invalid', () => {
+        if (nameR.value == '')
+            nameR.setCustomValidity('Preencha com o seu Nome!');
+        else
+            nameR.setCustomValidity('');
+    });
+    
+    lastNameR.addEventListener('invalid', () => {
+        if (lastNameR.value == '')
+            lastNameR.setCustomValidity('Preencha com o seu Sobrenome!');
+        else
+            lastNameR.setCustomValidity('');
+    });
+    
+    emailR.addEventListener('invalid', () => {
+        if (emailR.value == '')
+            emailR.setCustomValidity('Preencha com email valido!');
+        else
+            emailR.setCustomValidity('');
+    });
+})();
+// --------- <= => ---------
 
-lastNameR.addEventListener('invalid', () => {
-    if (lastNameR.value == '')
-        lastNameR.setCustomValidity('Preencha com o seu Sobrenome!');
-    else
-        lastNameR.setCustomValidity('');
-});
+// --------- <= Verificação check-box => ---------
 
-emailR.addEventListener('invalid', () => {
-    emailR.setCustomValidity('Preencha com email valido!');
-});
+(function optional() {
+    let optYes = document.querySelector('#optYes');
+    let opNo = document.querySelector('#optNo');
+
+    if (optYes.checked)
+        alert('Opção Sim');
+    if (opNo.checked)
+        alert('OPção Não');
+
+})();
 
 // --------- <= => ---------
 
 function register() {
-    
+    if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
+        alert('Sucesso');
+        location.href = 'index.html';
+    }
 }
 
 // ---------------------
