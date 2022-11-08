@@ -12,17 +12,17 @@
 <body>
     <section class="re-main" id="register">
         <div class="register" id="leRegister">
-            <form method="post">
-                <label for="" id="name">Nome:</label>
+            <form method="post" action="register.html" id="formRegister" onsubmit="register(); return false">
+                <label for="" id="lbName">Nome:</label>
                 <input type="text" id="inpName" autofocus>
-                <label for="" id="lastName">Sobrenome:</label>
+                <label for="" id="lbLastName">Sobrenome:</label>
                 <input type="text" id="inpLastName">
-                <label for="" id="email">Email:</label>
+                <label for="" id="lbEmail">Email:</label>
                 <input type="email" id="inpEmail">
-                <label for="" id="password">Senha:</label>
+                <label for="" id="lbPassword">Senha:</label>
                 <input type="password" id="inpPassword">
-                <label for="">Repetir senha:</label>
-                <input type="password" id="inpPassword">
+                <label for="" id="lbPasswordC">Repetir senha:</label>
+                <input type="password" id="inpPasswordC">
                 <label for="">Receber Novidades?</label>
                 <div class="optional">
                     <label for="">Sim:</label>

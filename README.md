@@ -39,8 +39,8 @@ Eventos
 
 Acesso aos elementos DOM do HTML
 
-- [ ] Via referência DOM pelo id do elemento HTML
-- [ ] Via getElementByID()
+- [x] Via referência DOM pelo id do elemento HTML
+- [x] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
 - [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
@@ -48,7 +48,7 @@ Acesso aos elementos DOM do HTML
 Tratadores de Evento
 
 - [ ] Especificar o tratador de evento inline
-- [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
+- [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
 - [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
 - [ ] Usar o operador this em funções tratadoras de eventos.
 
@@ -77,7 +77,7 @@ Qualidade do código
 
 Formulário
 
-- [ ] Validação de formulário com onsubmit usando os métodos tradicionais
+- [x] Validação de formulário com onsubmit usando os métodos tradicionais
 - [ ] Validação de formulário com HTML5 API
   - [ ] Customizar as mensagens nos balões de mensagem
   - [ ] Usar os atributos de validação dos inputs
@@ -85,7 +85,7 @@ Formulário
 - [ ] Ler e escrever em elementos input com a propriedade value
 - [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
-- [ ] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
+- [x] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
 
 jQuery
 

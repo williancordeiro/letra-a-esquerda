@@ -2,34 +2,39 @@ function login() {
     const email = document.getElementById('emailLE').value;
     const password = document.getElementById('passwordLE').value;
 
-    if (emailIsValid(email) && password == 'admin') {
+    if (emailIsValid(email) && passwordIsValid(password)) {
         alert('Sucesso');
-        location.href = 'index.html';
-    } else if(email == '' || password == '') {
-        alert('Insira os dados!');
-    } else 
-        alert('Email ou Senha incorretos!');
+    } else if (email == '' || password == '') {
+        alert('erro');
+    }
 }
+
+// --------- Script para pagina de registro  --------- >
+
+
+// Validações de Campos ->
 
 let emailIsValid = (email) => {
     let re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
 
-// Script para pagina de registro >
+function passwordIsValid(password) {
+    let re = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/;
+    return re.test(password);
+}
 
-const name = document.forms['inpName'].value;
-const lastName = document.forms['inpLastName'].value;
-const emailR = document.forms['inpEmail'].value;
-const passwordR = document.forms['inpPassword'].value;
+let confirmPassword = (passwordConfirm)=> {
+    if (passwordConfirm === passwordR)
+        return true;
+}
 
-function user() {
-    
-    if (emailIsValid(emailR)) {
-        
+// ***************
+
+function register() {
+    if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
+        alert('Sucesso');
     }
 }
 
-function addUser(user) {
-    
-}
+// ---------------------
