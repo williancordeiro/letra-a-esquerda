@@ -78,10 +78,10 @@ Qualidade do código
 Formulário
 
 - [x] Validação de formulário com onsubmit usando os métodos tradicionais
-- [ ] Validação de formulário com HTML5 API
-  - [ ] Customizar as mensagens nos balões de mensagem
-  - [ ] Usar os atributos de validação dos inputs
-  - [ ] Usar expressões regulares
+- [x] Validação de formulário com HTML5 API
+  - [x] Customizar as mensagens nos balões de mensagem
+  - [x] Usar os atributos de validação dos inputs
+  - [x] Usar expressões regulares
 - [ ] Ler e escrever em elementos input com a propriedade value
 - [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
