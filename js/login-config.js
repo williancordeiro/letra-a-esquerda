@@ -1,3 +1,5 @@
+// --------------------------- <| Script para pagina de login |> --------------------------- >
+
 function login() {
     const email = document.getElementById('emailLE').value;
     const password = document.getElementById('passwordLE').value;
@@ -11,10 +13,13 @@ function login() {
         alert('Email ou Senha Incorretos!')
 }
 
-// --------- Script para pagina de registro  --------- >
+// --------------------------- <| |> ---------------------------
 
+// ************************************************************************************ 
 
-// Validações de Campos ->
+// --------------------------- <| Script para pagina de registro |>  --------------------------- >
+
+// --------- <= Validação de campos com Regex => ---------
 
 let emailIsValid = (email) => {
     let re = /\S+@\S+\.\S+/;
@@ -31,15 +36,31 @@ let confirmPassword = (passwordConfirm)=> {
         return true;
 }
 
-// ***************
+// --------- <= => ---------
 
-// ------ < Dados para pagina de Registro > ------
+// ------------------ <= Dados para pagina de Registro => ------------------
+
+// ====== |Labels| ======
+
+let lbName = document.querySelector('#lbName');
+let lbLastName = document.querySelector('#lbLastName');
+let lbEmail = document.querySelector('#lbEmail');
+let lbPassword = document.querySelector('#lbPassword');
+let lbConfirmPassword = document.querySelector('#inpConfPassword');
+
+// ====== || ======
+
+// ====== |Inputs| ======
 
 let nameR = document.querySelector('#inpName');
 let lastNameR = document.querySelector('#inpLastName');
 let emailR = document.getElementById('inpEmail');
+let passwordR = document.getElementsByName('passwordR');
+let confirmPasswordR = document.querySelector('#inpConfPassword');
 
-// ------ < > ------
+// ====== || ======
+
+// ------------------ <= => ------------------
 
 // --------- <= Validação de campo HTML5 API => ---------
 (function validate() {
@@ -82,10 +103,10 @@ let emailR = document.getElementById('inpEmail');
 // --------- <= => ---------
 
 function register() {
-    if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
-        alert('Sucesso');
-        location.href = 'index.html';
-    }
+    alert('Sucesso');
+    location.href = 'index.html';
 }
 
-// ---------------------
+// --------------------------- <| |> ---------------------------
+
+// ************************************************************************************
