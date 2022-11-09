@@ -87,6 +87,13 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
 })();
 // --------- <= => ---------
 
+let validateEmail = () => {
+    if (!emailIsValid(emailR.value)) {
+        emailR.value = 'Insira um email valido';
+        emailR.style = 'color: red';
+    }
+}
+
 // --------- <= Verificação check-box => ---------
 
 (function optional() {
@@ -103,6 +110,9 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
 // --------- <= => ---------
 
 function register() {
+    if (validateEmail()) {
+        alert('erro');
+    }
     alert('Sucesso');
     location.href = 'index.html';
 }
