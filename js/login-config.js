@@ -55,7 +55,7 @@ let lbConfirmPassword = document.querySelector('#inpConfPassword');
 let nameR = document.querySelector('#inpName');
 let lastNameR = document.querySelector('#inpLastName');
 let emailR = document.getElementById('inpEmail');
-let passwordR = document.getElementsByName('passwordR');
+let passwordR = document.querySelector('#inpPassword');
 let confirmPasswordR = document.querySelector('#inpConfPassword');
 
 // ====== || ======
@@ -67,6 +67,8 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
     nameR.addEventListener('invalid', () => {
         if (nameR.value == '')
             nameR.setCustomValidity('Preencha com o seu Nome!');
+        else if (nameR.legth <= 2)
+            nameR.setCustomValidity('Nome precisa ter no minimo 3 Caracteres!');
         else
             nameR.setCustomValidity('');
     });
@@ -87,13 +89,6 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
 })();
 // --------- <= => ---------
 
-let validateEmail = () => {
-    if (!emailIsValid(emailR.value)) {
-        emailR.value = 'Insira um email valido';
-        emailR.style = 'color: red';
-    }
-}
-
 // --------- <= Verificação check-box => ---------
 
 (function optional() {
@@ -110,11 +105,10 @@ let validateEmail = () => {
 // --------- <= => ---------
 
 function register() {
-    if (validateEmail()) {
-        alert('erro');
+    if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
+        alert('Sucesso');
+        location.href = 'index.html';
     }
-    alert('Sucesso');
-    location.href = 'index.html';
 }
 
 // --------------------------- <| |> ---------------------------
