@@ -104,11 +104,15 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
 
 // --------- <= => ---------
 
+let reLogin = document.querySelector('a');
+
 function register() {
     if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
         alert('Sucesso');
         location.href = 'index.html';
     }
+
+    reLogin.innerHTML = 'Boa meu nobre!';
 }
 
 // --------------------------- <| |> ---------------------------
