@@ -108,7 +108,7 @@ let reLogin = document.querySelector('p');
 let input = document.querySelector('input');
 
 function register() {
-        input.value = 'Salve';
+    input.value = 'Salve';
     if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
         alert('Sucesso');
         setInterval(function() {
