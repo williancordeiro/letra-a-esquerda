@@ -105,11 +105,15 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
 // --------- <= => ---------
 
 let reLogin = document.querySelector('p');
+let input = document.querySelector('input');
 
 function register() {
+    input.value = 'Salve';
     if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
         alert('Sucesso');
-        location.href = 'index.html';
+        setInterval(function() {
+            location.href = 'index.html';
+        }, 3000);
     }
 
     reLogin.innerHTML = 'Boa meu nobre! ';
