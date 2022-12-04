@@ -1,91 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    text-align: center;
 }
 
-/*
-Barra de navegação
-*/
-.le-navbar {
-    padding-bottom: 9px;
+nav {
     background-color: #AB0202;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    margin-bottom: 3px;
 }
 
-/*
-Icone de Livro da barra de navegação
-*/
-.le-icon-book {
-    float: left;
-    width: 130px;
-    height: 66px;
-    margin-top: 6px;
-    rotate: -10deg;
-}
-
-input {
-    font-family: 'Roboto', sans-serif;
-}
-
-.inp-le-search {
-    float: left;
-    padding: 12px 330px 9px 12px;
-    border: solid 0.1px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    margin-top: 13px;
-    margin-left: 140px;
+#logoBook {
+    /* width: 4rem; */
+    rotate: -13deg;
+    /* margin: 1px; */
 }
 
 button {
     background-color: #8B0101;
-    padding: 12px 12px 0px 12px;
-    border: solid 0.1px;
+    /* color: #ffffff; */
 }
 
-.bt-le-search {   
-    margin-top: 13px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+#svg-menus {
+    width: 150%;
 }
 
-.bt-le-profile-menu {
-    background-color: #8B0101;
-    border: solid 0.1px;
-    border-radius: 50%;
-    padding: 12px 12px 1px 12px;
-    margin-left: 180px;
-}
-
-.bt-le-menu {
+#navItens {
+    background-color: #AB0202;
     color: #ffffff;
-    float: right;
-    padding: 6px 12px 1px 12px;
-    border-color: #000000;
-    border-radius: 3px;
-    margin-right: 27px;
-    margin-top: 16px;
 }
 
-.book-bakcground {
-    display: block;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 18vw;
-    height: 18vw;
-}
-
-/*
-Timer da função setInterval()
-*/
-
-.timer {
-    float: right;
-    color: #000000;
-    margin-right: 100px;
-    font-size: 2vw;
-}
