@@ -95,7 +95,7 @@ function register() {
     if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
         alert('Sucesso');
         setInterval(function() {
-            location.href = 'index.html';
+            location.href = '/app/index/index.html';
         }, 3000);
     }
 

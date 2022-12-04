@@ -6,7 +6,7 @@ function login() {
 
     if (emailIsValid(email) && passwordIsValid(password)) {
         alert('Sucesso');
-        location.href = 'index.html'
+        location.href = '/app/index/index.html'
     } else if (email == '' || password == '') {
         alert('Insira os dados!');
     } else 
