@@ -14,10 +14,10 @@ function passwordIsValid(password) {
     return re.test(password);
 }
 
-let confirmPassword = (passwordConfirm)=> {
-    if (passwordConfirm === passwordR)
-        return true;
-}
+// let confirmPassword = ()=> {
+//     if (passwordR.value != confirmPasswordR.value)
+//         return true;
+// }
 
 // --------- <= => ---------
 
@@ -36,9 +36,15 @@ let lbConfirmPassword = document.querySelector('#inpConfPassword');
 // ====== |Inputs| ======
 
 let nameR = document.querySelector('#inpName');
+let nameValid = false;
+
 let lastNameR = document.querySelector('#inpLastName');
+let lastNameValid = false;
+
 let emailR = document.getElementById('inpEmail');
+
 let passwordR = document.querySelector('#inpPassword');
+
 let confirmPasswordR = document.querySelector('#inpConfPassword');
 
 // ====== || ======
@@ -48,19 +54,27 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
 // --------- <= Validação de campo HTML5 API => ---------
 (function validate() {
     nameR.addEventListener('invalid', () => {
-        if (nameR.value == '')
+        if (nameR.value == '') {
             nameR.setCustomValidity('Preencha com o seu Nome!');
-        else if (nameR.legth <= 2)
+            nameValid = false;
+        }
+        if (nameR.value <= 2)
             nameR.setCustomValidity('Nome precisa ter no minimo 3 Caracteres!');
-        else
+        else {
             nameR.setCustomValidity('');
+            nameValid = true;
+        }
     });
     
     lastNameR.addEventListener('invalid', () => {
-        if (lastNameR.value == '')
+        if (lastNameR.value == '') {
             lastNameR.setCustomValidity('Preencha com o seu Sobrenome!');
-        else
+            lastNameValid = false;
+        }
+        else {
             lastNameR.setCustomValidity('');
+            lastNameValid = true;
+        }
     });
     
     emailR.addEventListener('invalid', () => {
@@ -69,6 +83,23 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
         else
             emailR.setCustomValidity('');
     });
+
+    passwordR.addEventListener('invalid', () => {
+        if (passwordR.value == '')
+            passwordR.setCustomValidity('Preencha com uma senha valida!');
+        else
+        passwordR.setCustomValidity('');
+    })
+
+    confirmPasswordR.addEventListener('invalid', () => {
+        if (confirmPasswordR.value == '')
+            confirmPasswordR.setCustomValidity('Preencha com uma senha valida!');
+        if (passwordR.value != confirmPasswordR.value)
+            confirmPasswordR.setCustomValidity('As senhas não correspondem!');
+        
+        else
+            confirmPasswordR.setCustomValidity('');
+    })
 })();
 // --------- <= => ---------
 
@@ -90,16 +121,36 @@ let confirmPasswordR = document.querySelector('#inpConfPassword');
 let reLogin = document.querySelector('p');
 let input = document.querySelector('input');
 
-function register() {
-    input.value = 'Salve';
+// function register() {
+//     input.value = 'Salve';
+//     if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
+//         alert('Sucesso');
+//         setInterval(function() {
+//             location.href = '/app/index/index.html';
+//         }, 3000);
+//     }
+
+//     reLogin.innerHTML = 'Boa meu nobre! ';
+// }
+
+function cadastrar() {
     if (emailIsValid(emailR.value) && passwordIsValid(passwordR.value)) {
-        alert('Sucesso');
+        let listUser = JSON.parse(localStorage.getItem('listUser') || '[]')
+        listUser.push({
+            nome: nameR.value,
+            sobrenome: lastNameR.value,
+            email: emailR.value,
+            senha: passwordR.value
+        })
+    
+        localStorage.setItem('listUser', JSON.stringify(listUser))
+        
+        alert('Cadastrado com sucesso!')
         setInterval(function() {
             location.href = '/app/index/index.html';
-        }, 3000);
+        }, 3000)
+        
     }
-
-    reLogin.innerHTML = 'Boa meu nobre! ';
 }
 
 // --------------------------- <| |> ---------------------------
