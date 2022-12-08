@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <div class="navbar-brand col-3">
-                    <form class="input-group mx-auto" id="searchLE" role="search">
+                    <form class="input-group mx-auto" id="searchLE">
                         <input class="collapse navbar-collapse form-control-lg border-0 rounded-0 rounded-start" id="searchLE" type="search" style="width: 21vw;" placeholder="Procurar...">
                         <button class="collapse navbar-collapse btn" style="background-color: #8B0101;" type="submit">
                             <img src="/app/util/imgs/icons/search.svg" alt="">
@@ -83,143 +83,403 @@
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#searches">Busca</a>
             </li>
+          </ul>
     </div>
     <div class="tab-content">
-        <div class="tab-pane container-fluid" id="recent">
-            <h1>TESTE</h1>
+        <div class="tab-pane container-fluid active show fade" id="recent">
+            <img class="img-fluid mx-auto my-5 disabled" src="/app/util/imgs/background/book-opened-symmetrical-shape-svgrepo-com.svg" alt="">
+            <p class="text-lg-center disabled">Sem livros recentes</p>
         </div>
+
+        <!-- Modal - Livro 1 -->
+        <div class="modal fade" id="book1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-memorias-postumas-de-bras-cubas.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 2 -->
+        <div class="modal fade" id="book2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-alguns-humanos.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 3 -->
+        <div class="modal fade" id="book3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-a-elite-do-atraso.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 4 -->
+        <div class="modal fade" id="book4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/manga-fullmetal-alchemist-vol-1.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 5 -->
+        <div class="modal fade" id="book5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/manga-fullmetal-alchemist-vol-2.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 6 -->
+        <div class="modal fade" id="book6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-que-fazer.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 7 -->
+        <div class="modal fade" id="book7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-marighella.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 8 -->
+        <div class="modal fade" id="book8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-a-ordem-dos-arquivistas.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 9 -->
+        <div class="modal fade" id="book9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-maior-que-o-mundo.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 10 -->
+        <div class="modal fade" id="book10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-sapiens.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 11 -->
+        <div class="modal fade" id="book11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-manifesto-comunista.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal - Livro 12 -->
+        <div class="modal fade" id="book12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Memorias Póstumas de Brás Cubas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="/app/util/imgs/books/livro-o-estado-e-a-revolucao.jpg" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Proxima página</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="tab-pane container-fluid" id="updated">
-            <div class="container-fluid row border">
+            <div class="container-fluid row">
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-memorias-postumas-de-bras-cubas.jpg" class="card-img-top" alt="...">
+                        <img id="bookA" src="/app/util/imgs/books/livro-memorias-postumas-de-bras-cubas.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book1">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-alguns-humanos.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/livro-alguns-humanos.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book2">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-a-elite-do-atraso.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/livro-a-elite-do-atraso.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book3">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/manga-fullmetal-alchemist-vol-1.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/manga-fullmetal-alchemist-vol-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book4">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/manga-fullmetal-alchemist-vol-2.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/manga-fullmetal-alchemist-vol-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book5">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-que-fazer.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/livro-que-fazer.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book6">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-marighella.jpg" class="card-img-top" alt="...">
+                        <img id="book" id="book" src="/app/util/imgs/books/livro-marighella.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book7">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-a-ordem-dos-arquivistas.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/livro-a-ordem-dos-arquivistas.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book8">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-maior-que-o-mundo.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/livro-maior-que-o-mundo.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book9">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-sapiens.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/livro-sapiens.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book10">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-manifesto-comunista.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/livro-manifesto-comunista.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Começar a ler</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book11">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
                 <div class="col p-0 m-1">
                     <div class="card" style="width: 18rem; height: 39rem;">
-                        <img src="/app/util/imgs/books/livro-o-estado-e-a-revolucao.jpg" class="card-img-top" alt="...">
+                        <img id="book" src="/app/util/imgs/books/livro-o-estado-e-a-revolucao.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sinopse</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book12">
+                            Começar a ler
+                          </button>
                         </div>
                       </div>
                 </div>
             </div>
         </div>
         <div class="tab-pane container" id="searches">
-            <h1>TESTE</h1>
+            <h1 class="text-opacity-25 m-5">Sem livros correnspondentes a sua pesquisa.</h1>
         </div>
     </div>
     <!-- Bootstrap JS -->
     <div class="import-bootstrap">
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    </div>
+    <!-- jQuery -->
+    <div class="import-jquery">
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+      <script src="/app/util/js/config.js"></script>
     </div>
       <!-- My scripts -->
       <div class="my-scripts">
