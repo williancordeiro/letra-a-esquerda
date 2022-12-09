@@ -155,15 +155,4 @@ function cadastrar() {
 
 // --------------------------- <| |> ---------------------------
 
-function search() {
-    let inptSearch = document.querySelector('#searchLE')
-
-    let books = new Array();
-
-    if (localStorage.hasOwnProperty('books')) {
-        JSON.parse(localStorage.getItem('books'));
-    }
-
-    books.push()
-}
 // ************************************************************************************
