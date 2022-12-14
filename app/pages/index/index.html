@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="styles">
+        <!-- Bootstrap CSS -->
+        <div class="import-bootstrap">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        </div>
+        <div class="my-style">
+            <link rel="stylesheet" href="/app/pages/index/css/index.css">
+        </div>
+    </div>
+
+    <title>Letra à Esquerda</title>
+</head>
+<body class="p-0">
+    <div class="container-fluid p-0">
+        <div class="mb-1">
+            <nav class="navbar navbar-expand-lg container-fluid">
+                <div class="container-fluid">
+
+                    <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLeft" aria-controls="menuLeft">
+                        <img src="/assets/resources/imgs/icons/list.svg" alt="">
+                      </button>
+
+                    <div class="navbar-brand">
+                        <a class="" href="#">
+                            <img class="img-fluid" src="/assets/resources/imgs/icons/logo-le.svg" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <div class="navbar-brand container">
+                            <form class="input-group">
+                                <input class="form-control form-control-lg ms-5" type="search" name="search" id="search" placeholder="Procurar...">
+                                <button class="btn btn-danger me-5" type="submit">
+                                    <img src="/assets/resources/imgs/icons/search.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="navbar-brand row">
+                            <div class="dropdown-center col-1 mx-4">
+                                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="/assets/resources/imgs/icons/bell-fill.svg" alt="">
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                              <div class="dropdown-center col-1 mx-4">
+                                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="/assets/resources/imgs/icons/chat-dots-fill.svg" alt="">
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                              <div class="dropdown-center col-1 mx-4">
+                                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="/assets/resources/imgs/icons/person-fill.svg" alt="">
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="justify-content-end">
+                        <button class="btn navbar-toggler me-3" type="button" data-bs-toggle="modal" data-bs-target="#modalSearch">
+                            <img src="/assets/resources/imgs/icons/search.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </nav>
+            
+            <div id="offcanvas-left">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLeft" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h2 class="offcanvas-title" id="offcanvasExampleLabel">Letra à Esquerda</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <hr>
+                      <div class="dropdown-center">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <p><img class="img-thumbnail" src="/assets/resources/imgs/icons/icons-dark/bell-fill.svg" alt="">Notificações</P>
+                        </button>
+                        <ul class="dropdown-menu pb-0">
+                          <li class="pe-1 ps-1 pb-5">
+                            <h5 class="disabled">Sem notificações recentes</h5>
+                          </li>
+                          <li class="pe-1 ps-1 pb-5">
+
+                          </li>
+                            <button class="btn btn-outline-dark container-fluid" type="button">Limpar todas as notificações</button>
+                        </ul>
+                      </div>
+                      <div class="dropdown-center">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <P><img class="img-thumbnail" src="/assets/resources/imgs/icons/icons-dark/chat-dots-fill.svg" alt="">Mensagens</P>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-center">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <p class=""><img class="img-thumbnail" src="/assets/resources/imgs/icons/icons-dark/person-fill.svg" alt="">Perfil</p>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div id="modal-search">
+                <div class="modal fade" id="modalSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Pesquisar</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input class="form-control form-control-lg" type="search" name="search" id="search" placeholder="Procurar...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="p-0">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" data-bs-toggle="tab" href="#recents">Recentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#updates">Atualizados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#allItens">Todos</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#searchItem">Busca</a>
+                </li>
+            </ul>
+
+            <div id="tabs">
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="recents">
+                        
+                    </div>
+
+                    <div class="tab-pane" id="updates"></div>
+
+                    <div class="tab-pane" id="allItens"></div>
+
+                    <div class="tab-pane" id="searchItem"></div>
+                </div>
+            </div>
+        </div>
+
+        <div></div>
+    </div>
+    <!-- Bootstrap JS -->
+    <div class="import-bootstrap">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    </div>
+    <!-- My Script -->
+    <div class="my-script">
+      <script src="/app/pages/index/js/index.js"></script>
+    </div>
+    <!-- Jquery -->
+    <div class="imports-jquery">
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+      <script src="/app/util/js/config.js"></script>
+      <script src="/app/util/js/jquery.mask.js"></script>
+    </div>
+</body>
+</html>

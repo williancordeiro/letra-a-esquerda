@@ -1,0 +1,15 @@
+body {
+    background-image: url(/assets/resources/imgs/backgrouds/backgroud.png);
+}
+
+#loginLE {
+    background-color: white;
+    border-radius: 9px;
+    padding: 30px;
+    box-shadow: 0px 0px 30px 0px #000000;
+}
+
+#icon-book {
+    width: 6rem;
+    rotate: -13deg;
+}

@@ -1,0 +1,16 @@
+body {
+    background-image: url(/assets/resources/imgs/backgrouds/backgroud.png);
+}
+
+#section {
+    background-color: white;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 30px 30px 8.3rem 10px;
+    box-shadow: 1px 0px 6px 0px grey;
+}
+
+#icon-book {
+    width: 6rem;
+    rotate: -13deg;
+}

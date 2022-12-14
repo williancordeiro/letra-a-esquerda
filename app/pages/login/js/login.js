@@ -2,17 +2,24 @@
 
 // ---------------- < Atributos da pagina de Login > ----------------
 
-let email = document.querySelector('#emailLE');
-let password = document.querySelector('#passwordLE');
+let email = document.querySelector('#email');
+let password = document.querySelector('#password');
 
 // ---------------- < > ----------------
 
 function login() {
+    // alert('Botão está funcionando')
+
+    // if (email.value == 'abc@email.com' && password.value == 'abc')
+    //     alert('Funcionando!')
+
+
     let listUser = [];
 
     let userValid = {
         nome: '',
         sobrenome: '',
+        usuario: '',
         email: '',
         senha: ''
     }
@@ -25,6 +32,7 @@ function login() {
             userValid = {
                 nome: item.nome,
                 sobrenome: item.sobrenome,
+                usuario: item.usuario,
                 email: item.email,
                 senha: item.senha
             }
@@ -33,13 +41,12 @@ function login() {
 
     if (email.value == userValid.email && password.value == userValid.senha) {
         alert('Sucesso meu nobre!')
-        location.href = '/app/index/index.html'
+        location.href = '/app/pages/index/index.html'
+    } else if (email.value == '' && password.value == '') {
+        alert('Preencha com seus dados')
     } else {
-        alert('Você não possui cadastro!')
+        alert('Você não possuí cadastro!')
     }
-
-    // if (email.value == 'abc' && password.value == 'abc')
-    //     alert('Funcionando')
 }
 
 // ===================== < > =====================
