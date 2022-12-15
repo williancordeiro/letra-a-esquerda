@@ -15,8 +15,9 @@ $(function() {
                 $('nav').css('background-color', 'red');
             }, 3000)
         }
-    })
 
+        
+    })
 
 });
 

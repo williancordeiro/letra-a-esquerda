@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/app/pages/register/css/register.css">
     <title>Registrar-se</title>
 </head>
-<body>
+<body onload="welcome()">
     <div class="container-fluid">
         <div class="row justify-content-between" id="initial">
             <section class="col-12 col-sm-6 col-md-5" id="section">
@@ -19,7 +19,7 @@
                     <h1 class="text-center">Registre-se</h1>
 
                     <div class="text-center mt-3 mb-5">
-                        <img class="img-fluid" id="icon-book" src="/assets/resources/imgs/icons/logo-le.svg" alt="">
+                        <img class="img-fluid" id="icon-book" onmouseover="bigBook(this)" onmouseout="normalBook(this)" src="/assets/resources/imgs/icons/logo-le.svg" alt="">
                     </div>
 
                     <div class="form-floating my-3">

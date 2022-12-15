@@ -19,6 +19,16 @@ let passwordC = document.querySelector('#passwordC');
 
 // ==================
 
+// --------------------------- <| Função onload |> ---------------------------
+
+function welcome() {
+    alert('Bem-vindo a pagina de cadastro camarada!')
+}
+
+// --------------------------- <|  |> ---------------------------
+
+// ==================
+
 // --------------------------- <| Validação via Regex |> ---------------------------
 
 function emailIsValid(email) {
@@ -102,6 +112,22 @@ let confirmPassword = () => {
 
 // ==================
 
+// --------------------------- <| Evento onmouseover() e onmouseout |> ---------------------------
+
+function bigBook(a) {
+    a.style.width = '7rem';
+    a.style.rotate = '-21deg'
+}
+
+function normalBook(a) {
+    a.style.width = '6rem';
+    a.style.rotate = '-13deg';
+}
+
+// --------------------------- <|  |> ---------------------------
+
+// ==================
+
 // --------------------------- <| Função de Cadastro |> ---------------------------
 
 function register() {
@@ -120,6 +146,8 @@ function register() {
             email: email.value,
             senha: password.value
         })
+
+        listUser.sort();
     
         localStorage.setItem('listUser', JSON.stringify(listUser))
         

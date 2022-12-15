@@ -5,6 +5,17 @@
 let email = document.querySelector('#email');
 let password = document.querySelector('#password');
 
+
+function bigBook(a) {
+    a.style.width = '7rem';
+    a.style.rotate = '-21deg'
+}
+
+function normalBook(a) {
+    a.style.width = '6rem';
+    a.style.rotate = '-13deg';
+}
+
 // ---------------- < > ----------------
 
 function login() {
