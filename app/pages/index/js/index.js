@@ -6,6 +6,7 @@
     recommendatio();
     startTime();
     stopTimer();
+    empty();
     
     
 
@@ -51,7 +52,8 @@
             clearInterval(startTime);
     }
 
-    let search = document.getElementsByTagName('input');
+    let inpSearch = document.getElementsByTagName('input');
+    let search = document.querySelector('#search')
     let noti = document.getElementsByName('notification');
 
     function empty() {
@@ -59,4 +61,12 @@
             alert('Notificações limpas');
         })
     }
+
+    function inputColor() {
+        search.addEventListener('keypress', () => {
+            alert('Tecla Precionada')
+        })
+    }
+
+    inputColor();
 })();

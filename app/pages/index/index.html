@@ -46,10 +46,14 @@
                                 <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="/assets/resources/imgs/icons/bell-fill.svg" alt="">
                                 </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu pb-0">
+                                  <li class="pe-1 ps-1 pb-5">
+                                    <h5 class="disabled">Sem notificações recentes</h5>
+                                  </li>
+                                  <li class="pe-1 ps-1 pb-5">
+        
+                                  </li>
+                                    <button name="notification" class="btn btn-outline-dark container-fluid" type="button">Limpar todas as notificações</button>
                                 </ul>
                               </div>
                               <div class="dropdown-center col-1 mx-4">
@@ -57,19 +61,17 @@
                                     <img src="/assets/resources/imgs/icons/chat-dots-fill.svg" alt="">
                                 </button>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  <li><p class="text-center">Sem Mensagens</p></li>
                                 </ul>
                               </div>
                               <div class="dropdown-center col-1 mx-4">
                                 <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="/assets/resources/imgs/icons/person-fill.svg" alt="">
                                 </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu text-center">
+                                  <li><a class="dropdown-item" href="#">Ver Perfil</a></li>
+                                  <li><a class="dropdown-item" href="#">Configurações</a></li>
+                                  <li><a class="dropdown-item" href="#">Favoritos</a></li>
                                 </ul>
                               </div>
                         </div>
@@ -111,19 +113,17 @@
                             <P><img class="img-thumbnail" src="/assets/resources/imgs/icons/icons-dark/chat-dots-fill.svg" alt="">Mensagens</P>
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><p class="text-center">Sem Mensagens</p></li>
                         </ul>
                       </div>
                       <div class="dropdown-center">
                         <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <p class=""><img class="img-thumbnail" src="/assets/resources/imgs/icons/icons-dark/person-fill.svg" alt="">Perfil</p>
                         </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu text-center">
+                          <li><a class="dropdown-item" href="#">Ver Perfil</a></li>
+                          <li><a class="dropdown-item" href="#">Configurações</a></li>
+                          <li><a class="dropdown-item" href="#">Favoritos</a></li>
                         </ul>
                       </div>
                       <div class="mt-5 g-5">
@@ -172,9 +172,102 @@
                         
                     </div>
 
-                    <div class="tab-pane" id="updates"></div>
+                    <div class="tab-pane text-center p-1" id="updates">
 
-                    <div class="tab-pane" id="allItens"></div>
+                      <div class="row">
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-memorias-postumas-de-bras-cubas.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-o-estado-e-a-revolucao.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-que-fazer.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="tab-pane text-center p-1" id="allItens">
+
+                      <div class="row">
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-a-elite-do-atraso.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-a-ordem-dos-arquivistas.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-alguns-humanos.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-maior-que-o-mundo.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-manifesto-comunista.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                        <div class="card col-1 m-1" style="width: 18rem;">
+                          <img src="/assets/resources/imgs/books/livro-marighella.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sinopse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="btn btn-danger">Começar a ler</a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
 
                     <div class="tab-pane" id="searchItem"></div>
                 </div>
