@@ -42,7 +42,7 @@ Acesso aos elementos DOM do HTML
 - [x] Via referência DOM pelo id do elemento HTML
 - [x] Via getElementByID()
 - [x] Via getElementsByName()
-- [x] Via getElementsByTagName()
+- [ ] Via getElementsByTagName()
 - [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
@@ -62,7 +62,7 @@ Objetos Nativos
 Objetos
 
 - [x] Criar objeto usando função construtora ou notação literal
-- [x] Criar objetos a partir da definição de classes do ES6
+- [ ] Criar objetos a partir da definição de classes do ES6
 - [ ] Usar herança prototipal nativa ou herança de classes do ES6
 
 Qualidade do código
